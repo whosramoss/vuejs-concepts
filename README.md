@@ -1,30 +1,45 @@
-<a href="https://github.com/whosramoss/vuejs-collection">
-  <img alt="vuejs-collection" src="thumbnail.jpg" />
-  <h1 align="center">Vue.JS Collection</h1>
-</a>
+<h1>
+  <p align="center">
+    <img src="/icon.svg" alt="logo" width="128">
+    <br>Vue Concepts
+  </p>
+</h1>
 
 <p align="center">
-  A set of Vue.js projects, each with its own role, can be a great way to enhance personal learning. By working on separate projects, you can focus on different aspects of Vue.js, like state management or routing. 
+  Vue.js is a progressive framework for building user interfaces. It uses a reactive proxy-based model (Vue 3): when state changes, the UI updates declaratively without manual DOM manipulation. The Composition API organizes logic by behavior instead of fixed options, making reuse and maintenance easier in larger components.<br /> <br />
+  <a href="#core-pillars">Core pillars</a>
+  ·
+  <a href="#concepts">Concepts</a>
 </p>
 
-<div align="center">
-  <img src="https://img.shields.io/badge/vue.js-242424?style=for-the-badge&logo=vuedotjs" alt="vue">
-  <img src="https://img.shields.io/badge/css3-1414b8?style=for-the-badge&logo=css3&logoColor=fff" alt="CSS">
-  <br/>
-  <img src="https://img.shields.io/badge/javascript-FEFEFE?style=for-the-badge&logo=javascript" alt="javascript">
-  <img src="https://img.shields.io/badge/Typescript-007acc?style=for-the-badge&logo=typescript&logoColor=fff" alt="TypeScript">
-</div>
-<br/>
+## Core pillars:
 
-<br/>
+- **Single-File Components (SFC)** — template, script, and style in one `.vue` file
+- **Declarative templates** — directives (`v-if`, `v-for`, `v-model`) and bindings (`:`, `@`)
+- **Predictable data flow** — props down, events up; `provide`/`inject` for deep trees
+- **Ecosystem** — Vue Router, Pinia, Vite, and official tools for SPAs and SSR
 
+## Concepts
 
+A folder with **8 educational Vue files**. Each one documents quirks and demonstrates a central Vue 3 topic:
 
-## License 
+| File                                                                          | Topic                                                          |
+| ----------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| [`01-reactivity-ref-reactive.vue`](./concepts/01-reactivity-ref-reactive.vue) | `ref` vs `reactive`, template unwrapping, `toRefs`, `computed` |
+| [`02-computed-watchers.vue`](./concepts/02-computed-watchers.vue)             | `computed` (incl. writable), `watch` vs `watchEffect`          |
+| [`03-template-directives.vue`](./concepts/03-template-directives.vue)         | `v-if`/`v-show`, `v-for` + `:key`, `v-model` and modifiers     |
+| [`04-props-emits.vue`](./concepts/04-props-emits.vue)                         | Read-only props, emits, `v-model` on child components          |
+| [`05-composables.vue`](./concepts/05-composables.vue)                         | Reusable `use*` functions, lifecycle inside composables        |
+| [`06-provide-inject.vue`](./concepts/06-provide-inject.vue)                   | `provide`/`inject`, `Symbol` keys, reactive injection          |
+| [`07-slots.vue`](./concepts/07-slots.vue)                                     | Default, named, and scoped slots                               |
+| [`08-lifecycle-teleport.vue`](./concepts/08-lifecycle-teleport.vue)           | Lifecycle hooks, `Teleport`, `defineAsyncComponent`            |
+
+These files are self-contained study examples. To run them interactively, import each one into an existing Vite + Vue 3 project in this collection (e.g. `vue-counter-app`) or scaffold a minimal app with `npm create vue@latest`.
+
+## License
 
 MIT License. [LICENSE](./LICENSE)
 
-## Author 
+## Author
 
 Gabriel Ramos ([@whosramoss](https://github.com/whosramoss))
-
