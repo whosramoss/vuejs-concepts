@@ -1,12 +1,12 @@
 <h1>
   <p align="center">
-    <img src="/icon.svg" alt="logo" width="128">
+    <img src="/vue-notes/src/assets/logo.svg" alt="logo" width="128">
     <br>Vue Concepts
   </p>
 </h1>
 
 <p align="center">
-  Vue.js is a progressive framework for building user interfaces. It uses a reactive proxy-based model (Vue 3): when state changes, the UI updates declaratively without manual DOM manipulation. The Composition API organizes logic by behavior instead of fixed options, making reuse and maintenance easier in larger components.<br /> <br />
+  Vue.js is a progressive framework for building user interfaces. It uses a reactive proxy-based model (Vue 3): when state changes, the UI updates declaratively without manual DOM manipulation.<br /> <br />
   <a href="#core-pillars">Core pillars</a>
   ·
   <a href="#concepts">Concepts</a>
